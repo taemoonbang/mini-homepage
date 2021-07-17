@@ -1,0 +1,65 @@
+body {
+    /* body 배경컬러 지정 */
+    background-color: #a3a3a3;
+
+    /* body에 배경이미지 적용 */
+    /* background-image: url("./static/images/pattern.png"); */
+
+    /* 고정된 사이즈로 설정 ->
+    밑에서 사이즈 작업해주는데 이 코드가 굳이 필요할까?*/
+    background-size: 100px;
+
+    /* 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+.bookcover{
+    /* 배경색 설정 */
+    background-color: #b4d1da;
+
+    /* 테두리 윤곽선 */
+    border: 1.5px solid #7a8e94; 
+
+    /* 모서리 처리 : 둥글게 */
+    border-radius: 9px;
+
+    /* 크기 설정 */
+    width: 700px;
+    height: 440px;
+
+    /* 중앙에 배치 - 좌우 auto(중앙), 상하 100px */
+    margin: 60px auto;
+
+    /* 하위 div인 bookdot 클래스 속성값을
+    absolute로 하기 위해 position 설정 */
+    position: relative;
+}
+
+.bookdot{
+    border: 2.5px dashed #ffffff;
+
+    /* 모서리 처리 : 둥글게 */
+    border-radius: 9px;
+
+    /* 크기 설정 */
+    width: 670px;
+    height: 410px;
+
+    margin: 13px;
+
+    position: absolute;
+}
+
+.page {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    width: 640px;
+    height: 390px;
+    margin: 10px 10px 15px 15px;
+    position: absolute;
+}
